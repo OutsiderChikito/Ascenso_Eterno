@@ -46,6 +46,14 @@ namespace StarterAssets
         [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
         public float FallTimeout = 0.15f;
 
+        //Miguel-------------------------------------
+        [SerializeField] private float maxStamina = 100f;
+        [SerializeField] private float staminaDrainRate = 10f;
+        [SerializeField] private float staminaRegenRate = 5f;
+        public float currentStamina;
+        private bool canSprint = true;
+        //Miguel-------------------------------------
+
         [Header("Player Grounded")]
         [Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
         public bool Grounded = true;
@@ -135,7 +143,10 @@ namespace StarterAssets
         private void Start()
         {
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
-            
+
+            //Miguel-------------------------------------
+            currentStamina = maxStamina;
+            //Miguel-------------------------------------
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
@@ -214,7 +225,29 @@ namespace StarterAssets
         private void Move()
         {
             // set target speed based on move speed, sprint speed and if sprint is pressed
-            float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+            //float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+            //Miguel-------------------------------------
+            float targetSpeed;
+            if (_input.sprint && canSprint) targetSpeed = SprintSpeed; else targetSpeed = MoveSpeed;
+            if (_input.sprint && _input.move != Vector2.zero && canSprint)
+            {
+                currentStamina -= staminaDrainRate * Time.deltaTime;
+                if (currentStamina <= 0f)
+                {
+                    currentStamina = 0f;
+                    canSprint = false;
+                }
+            }
+            else
+            {
+                currentStamina += staminaRegenRate * Time.deltaTime;
+                if (currentStamina >= maxStamina)
+                {
+                    currentStamina = maxStamina;
+                    canSprint = true;
+                }
+            }
+            //Miguel-------------------------------------
 
             // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
