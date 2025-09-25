@@ -47,11 +47,12 @@ namespace StarterAssets
         public float FallTimeout = 0.15f;
 
         //Miguel-------------------------------------
-        [SerializeField] private float maxStamina = 100f;
-        [SerializeField] private float staminaDrainRate = 10f;
-        [SerializeField] private float staminaRegenRate = 5f;
+        [Header("Stamina")]
+        public float maxStamina = 100f;
+        public float staminaDrainRate = 15f;
+        public float staminaRegenRate = 10f;
         public float currentStamina;
-        private bool canSprint = true;
+        public bool canSprint = true;
         //Miguel-------------------------------------
 
         [Header("Player Grounded")]
@@ -241,11 +242,8 @@ namespace StarterAssets
             else
             {
                 currentStamina += staminaRegenRate * Time.deltaTime;
-                if (currentStamina >= maxStamina)
-                {
-                    currentStamina = maxStamina;
-                    canSprint = true;
-                }
+                if (currentStamina >= maxStamina/10) canSprint = true;
+                if (currentStamina >= maxStamina) currentStamina = maxStamina;
             }
             //Miguel-------------------------------------
 
