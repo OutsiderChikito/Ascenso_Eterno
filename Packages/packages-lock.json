@@ -91,6 +91,7 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       }
     },
+<<<<<<< HEAD
     "com.unity.render-pipelines.high-definition": {
       "version": "14.0.12",
       "depth": 0,
@@ -116,6 +117,8 @@
         "com.unity.render-pipelines.core": "14.0.12"
       }
     },
+=======
+>>>>>>> 65c889660eb05383d27abbb6bae44f1faf54d175
     "com.unity.render-pipelines.universal": {
       "version": "14.0.12",
       "depth": 0,
@@ -138,14 +141,22 @@
     },
     "com.unity.searcher": {
       "version": "4.9.2",
+<<<<<<< HEAD
       "depth": 1,
+=======
+      "depth": 2,
+>>>>>>> 65c889660eb05383d27abbb6bae44f1faf54d175
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.shadergraph": {
       "version": "14.0.12",
+<<<<<<< HEAD
       "depth": 0,
+=======
+      "depth": 1,
+>>>>>>> 65c889660eb05383d27abbb6bae44f1faf54d175
       "source": "builtin",
       "dependencies": {
         "com.unity.render-pipelines.core": "14.0.12",
@@ -203,6 +214,7 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+<<<<<<< HEAD
     "com.unity.visualeffectgraph": {
       "version": "14.0.12",
       "depth": 1,
@@ -212,6 +224,8 @@
         "com.unity.render-pipelines.core": "14.0.12"
       }
     },
+=======
+>>>>>>> 65c889660eb05383d27abbb6bae44f1faf54d175
     "com.unity.visualscripting": {
       "version": "1.9.4",
       "depth": 0,

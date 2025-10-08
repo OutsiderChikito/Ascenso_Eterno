@@ -21,8 +21,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MT_archway_pillar02_URP
+<<<<<<< HEAD
   m_Shader: {fileID: -6465566751694194690, guid: bec9fcb81cb735c468340b9005e94ab2,
     type: 3}
+=======
+  m_Shader: {fileID: -6465566751694194690, guid: bec9fcb81cb735c468340b9005e94ab2, type: 3}
+>>>>>>> 65c889660eb05383d27abbb6bae44f1faf54d175
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -133,7 +137,11 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< HEAD
     - _Color: {r: 3.6679244, g: 3.1412451, b: 2.9551015, a: 1}
+=======
+    - _Color: {r: 2.9960785, g: 2.0807765, b: 1.5879216, a: 1}
+>>>>>>> 65c889660eb05383d27abbb6bae44f1faf54d175
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
