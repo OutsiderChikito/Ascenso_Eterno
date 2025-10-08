@@ -7,13 +7,7 @@
     "com.unity.ide.visualstudio": "2.0.22",
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.inputsystem": "1.14.0",
-<<<<<<< HEAD
-    "com.unity.render-pipelines.high-definition": "14.0.12",
     "com.unity.render-pipelines.universal": "14.0.12",
-    "com.unity.shadergraph": "14.0.12",
-=======
-    "com.unity.render-pipelines.universal": "14.0.12",
->>>>>>> 65c889660eb05383d27abbb6bae44f1faf54d175
     "com.unity.terrain-tools": "5.0.6",
     "com.unity.test-framework": "1.1.33",
     "com.unity.textmeshpro": "3.0.7",
