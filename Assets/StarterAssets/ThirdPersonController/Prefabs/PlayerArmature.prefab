@@ -1112,8 +1112,9 @@ MonoBehaviour:
   FallTimeout: 0.15
   maxStamina: 100
   staminaDrainRate: 10
-  staminaRegenRate: 5
+  staminaRegenRate: 10
   currentStamina: 0
+  canSprint: 1
   Grounded: 1
   GroundedOffset: -0.14
   GroundedRadius: 0.28
