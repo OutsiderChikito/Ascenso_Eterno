@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/StarterAssets/ThirdPersonController/Scenes/Main Menu.unity
+    guid: 5eed895b54944b84695f4c70064b971f
+  - enabled: 1
     path: Assets/StarterAssets/ThirdPersonController/Scenes/Nivel_1.unity
     guid: e9017d5f96b9f09489b4b37e1d6eb914
   - enabled: 1
