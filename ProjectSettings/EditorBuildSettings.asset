@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/StarterAssets/ThirdPersonController/Scenes/Nivel_3.unity
     guid: 890af56192098da4aa3aa0fdd5692050
+  - enabled: 1
+    path: Assets/StarterAssets/ThirdPersonController/Scenes/Credits.unity
+    guid: f56cad8d5e5b6ee44b2f730131816d9e
   m_configObjects: {}
